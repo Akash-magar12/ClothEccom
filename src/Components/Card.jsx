@@ -22,7 +22,7 @@ const Card = ({ price, img, id, name, }) => {
             alt={name}
           />
         </div>
-        <div className=" bg-red-300  py-1 px-3 flex flex-col justify-center lg:h-[20%]">
+        <div className=" py-1 px-3 flex flex-col justify-center lg:h-[20%]">
           <h3 className="text-sm lg:text-md font-bold">{name}</h3>
           <div className="flex items-center justify-between gap-2 mt-2">
             <span className="text-sm bold text-gray-800 font-medium">
