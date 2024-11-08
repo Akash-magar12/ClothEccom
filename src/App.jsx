@@ -13,7 +13,7 @@ import "react-toastify/dist/ReactToastify.css";
 const App = () => {
   return (
     <>
-      <div className="w-full px-4 sm:px-4 md:px-5 lg:px-20 py-2 bg-[#fff]  min-h-screen ">
+      <div className="w-full px-4 sm:px-4 md:px-5 lg:px-10 xl:px-20 py-2 bg-[#fff]  min-h-screen ">
         <ToastContainer
           position="top-right"
           autoClose={500}

@@ -9,20 +9,20 @@ const Card = ({ price, img, id, name, }) => {
   };
 
   return (
-    <div className="relative w-full sm:w-[14rem] md:w-[11rem] lg:w-[16rem] bg-[#fff] overflow-hidden shadow-md rounded lg:h-[20rem] h-[16rem] flex flex-col justify-between">
+    <div className="relative w-[15rem] sm:w-[14rem] md:w-[11rem] lg:w-[16rem] bg-[#fff] overflow-hidden shadow-md rounded lg:h-[20rem] h-[22rem] flex p-1 flex-col justify-between">
       {/* Product Link */}
       <Link
         to={`/product/${id}`}
-        className="w-full h-64 lg:h-[19rem] cursor-pointer flex flex-col justify-between"
+        className="w-full h-72 lg:h-[19rem] cursor-pointer flex flex-col justify-between"
       >
-        <div className="w-full h-[60%] lg:h-[80%] transition-all hover:scale-110">
+        <div className="w-full h-[90%] lg:h-[80%] transition-all hover:scale-110">
           <img
             className="w-full h-[96%] object-cover object-top"
             src={img}
             alt={name}
           />
         </div>
-        <div className="h-[40%] px-3 flex flex-col justify-center lg:h-[20%]">
+        <div className=" bg-red-300  py-1 px-3 flex flex-col justify-center lg:h-[20%]">
           <h3 className="text-sm lg:text-md font-bold">{name}</h3>
           <div className="flex items-center justify-between gap-2 mt-2">
             <span className="text-sm bold text-gray-800 font-medium">
