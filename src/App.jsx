@@ -1,6 +1,6 @@
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Pages/Home";
 import Collection from "./Pages/Collection";
 import About from "./Pages/About";
@@ -10,7 +10,14 @@ import ProductPage from "./Pages/ProductPage";
 import Search from "./Components/Search";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useEffect } from "react";
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to the top when route changes
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <>
       <div className="w-full px-4 sm:px-4 md:px-5 lg:px-10 xl:px-20 py-2 bg-[#fff]  min-h-screen ">

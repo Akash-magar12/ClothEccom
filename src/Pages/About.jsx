@@ -155,14 +155,14 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-4">
-          <h2 className="text-2xl lg:text-4xl mb-4 ">Our Team Members</h2>
+        <div className="mt-4 p-4">
+          <h2 className="text-2xl  lg:text-4xl mb-4 ">Our Team Members</h2>
 
           <Slider {...settings}>
             {teamMembers.map((team, id) => (
               <div
                 key={id}
-                className="w-full n sm:w-[45%]  md:w-[30%] lg:w-[20rem]  shadow-lg"
+                className="w-full  n sm:w-[45%]  md:w-[30%] lg:w-[20rem]  shadow-lg"
               >
                 <img
                   src={team.img}

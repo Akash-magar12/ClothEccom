@@ -22,8 +22,8 @@ const ProductPage = () => {
       </span>
       {product ? (
         <>
-          <div className="w-full mt-4 lg:mt-10   flex flex-wrap  gap-8 min-h-screen justify-center ">
-            <div className="left lg:w-[40%] h-[70vh] ">
+          <div className="w-full mt-4 lg:mt-10 flex flex-wrap gap-8 min-h-screen justify-center ">
+            <div className="left lg:w-[40%] h-[70vh]">
               <div className="w-full mx-auto h-full">
                 <img
                   className="w-full h-full object-cover"
